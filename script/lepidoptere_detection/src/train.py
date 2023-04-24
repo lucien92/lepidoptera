@@ -19,7 +19,7 @@ argparser = argparse.ArgumentParser(
 argparser.add_argument(
     '-c',
     '--conf',
-    default='/home/lucien/projet_lepinoc/script_lepinoc/script/lepidoptere_detection/src/config/lepido_detection.json',
+    default='/content/lepidoptera/script/lepidoptere_detection/src/config/lepido_detection.json',
     help='path to configuration file')
 
 
@@ -39,7 +39,7 @@ def _main_(args):
                                                     config['model']['labels'],
                                                     config['data']['base_path'])
     print("longueur initiale du train", len(train_imgs))
-    # with open("/home/lucien/projet_lepinoc/script_lepinoc/script/lepidoptere_detection/src/data/inputs/verif_input.csv", 'w') as f:
+    # with open("/content/lepidoptera/script/lepidoptere_detection/src/data/inputs/verif_input.csv", 'w') as f:
     #     for i in train_imgs:
     #         f.write(i['filename'] + '\n')
 

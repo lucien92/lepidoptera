@@ -14,7 +14,7 @@ with open(f'/home/lucien/projet_lepinoc/data/data/{folders[0]}/classes.txt') as 
     lines = f.readlines()
     labels = [line.replace('\n', '') for line in lines]
 
-# with open('/home/lucien/projet_lepinoc/script_lepinoc/data_analyse/annotations1.csv', 'w') as f:
+# with open('/content/lepidoptera/data_analyse/annotations1.csv', 'w') as f:
 #     path = paths_to_annotations[0]
 #     for file in os.listdir(path):
 #         with open(f'{path}/{file}') as f2:
@@ -34,7 +34,7 @@ with open(f'/home/lucien/projet_lepinoc/data/data/{folders[0]}/classes.txt') as 
 #     lines = f.readlines()
 #     labels = [line.replace('\n', '') for line in lines]
 
-# with open('/home/lucien/projet_lepinoc/script_lepinoc/data_analyse/annotations2.csv', 'w') as f:
+# with open('/content/lepidoptera/data_analyse/annotations2.csv', 'w') as f:
 #     path = paths_to_annotations[1]
 #     for file in os.listdir(path):
 #         with open(f'{path}/{file}') as f2:
@@ -54,7 +54,7 @@ with open(f'/home/lucien/projet_lepinoc/data/data/{folders[0]}/classes.txt') as 
 #     lines = f.readlines()
 #     labels = [line.replace('\n', '') for line in lines]
 
-# with open('/home/lucien/projet_lepinoc/script_lepinoc/data_analyse/annotations3.csv', 'w') as f:
+# with open('/content/lepidoptera/data_analyse/annotations3.csv', 'w') as f:
 #     path = paths_to_annotations[2]
 #     for file in os.listdir(path):
 #         with open(f'{path}/{file}') as f2:
@@ -74,7 +74,7 @@ with open(f'/home/lucien/projet_lepinoc/data/data/{folders[0]}/classes.txt') as 
 #     lines = f.readlines()
 #     labels = [line.replace('\n', '') for line in lines]
 
-# with open('/home/lucien/projet_lepinoc/script_lepinoc/data_analyse/annotations4.csv', 'w') as f:
+# with open('/content/lepidoptera/data_analyse/annotations4.csv', 'w') as f:
 #     path = paths_to_annotations[3]
 #     for file in os.listdir(path):
 #         with open(f'{path}/{file}') as f2:
@@ -94,7 +94,7 @@ with open(f'/home/lucien/projet_lepinoc/data/data/{folders[0]}/classes.txt') as 
 
 import os
 
-path1, path2, path3, path4 = [f'/home/lucien/projet_lepinoc/script_lepinoc/data_analyse/annotations{i}.csv' for i in range(1, 5)]
+path1, path2, path3, path4 = [f'/content/lepidoptera/data_analyse/annotations{i}.csv' for i in range(1, 5)]
 print(path1, path2, path3, path4)
 
 with open(path1) as f:
@@ -156,9 +156,9 @@ def convert_bbox_format_reverse(bbox):
             ymax = int(bbox[1] + 0.5 * bbox[3])
             return xmin, ymin, xmax, ymax
 
-with open('/home/lucien/projet_lepinoc/script_lepinoc/script/lepidoptere_detection/src/data/inputs/all_annotations.csv', 'w') as f:
+with open('/content/lepidoptera/script/lepidoptere_detection/src/data/inputs/all_annotations.csv', 'w') as f:
     for i in range(1, 5):
-        with open(f'/home/lucien/projet_lepinoc/script_lepinoc/data_analyse/annotations{i}.csv', 'r') as f2:
+        with open(f'/content/lepidoptera/data_analyse/annotations{i}.csv', 'r') as f2:
             lines = f2.readlines()
             for line in lines:
                 line = line.replace('\n', '')

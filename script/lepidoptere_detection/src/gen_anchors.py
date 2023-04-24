@@ -12,7 +12,7 @@ argparser = argparse.ArgumentParser()
 argparser.add_argument(
     '-c',
     '--conf',
-    default='/home/lucien/projet_lepinoc/script_lepinoc/script/lepidoptere_detection/src/config/lepido_detection_resnet.json',
+    default='/content/lepidoptera/script/lepidoptere_detection/src/config/lepido_detection_resnet.json',
     help='path to configuration file')
 
 argparser.add_argument(

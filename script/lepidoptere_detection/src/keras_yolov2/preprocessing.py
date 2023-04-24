@@ -549,9 +549,9 @@ class BatchGenerator(Sequence):
             # Update rarest specie
             counter_min_key = min(counter, key=counter.get)
             counter_min = counter[counter_min_key]
-            print('counter min',counter_min)
+            #print('counter min',counter_min)
 
-        print("après sampling :", len(self._images)) #très peu d'images avec sampling car beaucoup de bounding boxes donc beaucoup d'espèvces et le compteur marche avec les espèces!!
+        #print("après sampling :", len(self._images)) #très peu d'images avec sampling car beaucoup de bounding boxes donc beaucoup d'espèvces et le compteur marche avec les espèces!!
 
         
         #print(counter)

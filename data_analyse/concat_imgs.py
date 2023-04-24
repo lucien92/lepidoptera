@@ -1,7 +1,7 @@
 import os
 import cv2
 #we want to take all the img of the folders /home/lucien/projet_lepinoc/data/data/img and put them in a same folder
-new_path_to_img = '/home/lucien/projet_lepinoc/data/all_img'
+new_path_to_img = '/content/drive/MyDrive/all_img/'
 
 path_to_img = '/home/lucien/projet_lepinoc/data/data'
 try:

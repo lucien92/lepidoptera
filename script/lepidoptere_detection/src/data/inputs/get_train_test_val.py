@@ -10,7 +10,7 @@ argparser=ArgumentParser("Splits the desired csv file to 3 different files for t
 argparser.add_argument(
     '-c',
     '--conf',
-    default='/home/lucien/projet_lepinoc/script_lepinoc/script/lepidoptere_detection/src/config/lepido_detection.json',
+    default='/content/lepidoptera/script/lepidoptere_detection/src/config/lepido_detection.json',
     help='path to configuration file')
 
 def _main_(args):
@@ -37,9 +37,9 @@ def _main_(args):
 
     path=(os.sep).join(path_to_dataset.split(os.sep)[:-1])
     df.to_csv()
-    train.to_csv("/home/lucien/projet_lepinoc/script_lepinoc/script/lepidoptere_detection/src/data/inputs/train.csv",header=False,index=False)
-    val.to_csv("/home/lucien/projet_lepinoc/script_lepinoc/script/lepidoptere_detection/src/data/inputs/valid.csv",header=False,index=False)
-    test.to_csv("/home/lucien/projet_lepinoc/script_lepinoc/script/lepidoptere_detection/src/data/inputs/test.csv",header=False,index=False)
+    train.to_csv("/content/lepidoptera/script/lepidoptere_detection/src/data/inputs/train.csv",header=False,index=False)
+    val.to_csv("/content/lepidoptera/script/lepidoptere_detection/src/data/inputs/valid.csv",header=False,index=False)
+    test.to_csv("/content/lepidoptera/script/lepidoptere_detection/src/data/inputs/test.csv",header=False,index=False)
     
 
 if __name__=='__main__':

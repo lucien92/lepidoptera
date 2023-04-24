@@ -9,14 +9,14 @@ from segment_anything import build_sam, SamPredictor, sam_model_registry
 #####  parameters #####
 
 
-csv_path = "/home/lucien/projet_lepinoc/script_lepinoc/segment_anything/result_2023-04-05 13:46:11.874005" #ici mettre le csv généré par le yolo (pour l'instant Amegilla quadrifasciata mais à remplacer par lépido)
+csv_path = "/content/lepidoptera/segment_anything/result_2023-04-05 13:46:11.874005" #ici mettre le csv généré par le yolo (pour l'instant Amegilla quadrifasciata mais à remplacer par lépido)
 
-sam_checkpoint = "/home/lucien/projet_lepinoc/script_lepinoc/segment_anything/sam_vit_b_01ec64.pth"
+sam_checkpoint = "/content/lepidoptera/segment_anything/sam_vit_b_01ec64.pth"
 model_type = "vit_b"
 
 device = "cuda"
 
-output_path = "/home/lucien/projet_lepinoc/script_lepinoc/segment_anything/output"
+output_path = "/content/lepidoptera/segment_anything/output"
 
 #####  util functions #####
 
