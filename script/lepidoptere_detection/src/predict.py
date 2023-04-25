@@ -19,14 +19,14 @@ argparser = argparse.ArgumentParser(
 argparser.add_argument(
   '-c',
   '--conf',
-  default='/home/lucien/projet_lepinoc/bees_detection/src/config/bees_detection.json',
+  default='/content/lepidoptera/script/lepidoptere_detection/src/config/lepido_detection.json',
   type=str,
   help='path to configuration file')
 
 argparser.add_argument(
   '-w',
   '--weights',
-  default='/home/lucien/projet_lepinoc/bees_detection/src/data/saved_weights/best_model_bestLoss_bestLoss.h5',
+  default='/content/lepidoptera/script/lepidoptere_detection/src/data/saved_weights/model_classic_lepido_bestLoss.h5',
   type=str,
   help='path to pretrained weights')
 
@@ -250,6 +250,7 @@ def _main_(args):
 
       # Predict
       boxes = yolo.predict(frame)
+      print("boxes:",boxes)
 
       #Avec bbox_iou on veut calculer le iou score de toutes les bounding boxes prédites et les afficher
 

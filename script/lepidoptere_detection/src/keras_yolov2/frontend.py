@@ -281,7 +281,7 @@ class YOLO(object):
         print('Fin du train, les poids ont été sauvergardés dans le fichier : {}'.format(pickle_file_path))
 
 
-    def predict(self, image, iou_threshold, score_threshold):
+    def predict(self, image, iou_threshold = 0.4, score_threshold = 0.5):
 
         input_image = self.resize(image)
 

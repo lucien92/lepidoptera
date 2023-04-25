@@ -14,137 +14,107 @@ with open(f'/home/lucien/projet_lepinoc/data/data/{folders[0]}/classes.txt') as 
     lines = f.readlines()
     labels = [line.replace('\n', '') for line in lines]
 
-# with open('/content/lepidoptera/data_analyse/annotations1.csv', 'w') as f:
-#     path = paths_to_annotations[0]
-#     for file in os.listdir(path):
-#         with open(f'{path}/{file}') as f2:
-#             lines = f2.readlines()
-#             for line in lines:
-#                 line = line.replace('\n', '')
-#                 line = line.split(' ')
-#                 line[0] = int(line[0])
-#                 line = [line[1], line[2], line[3], line[4], labels[line[0]]]
-#                 line = ','.join(line)
-#                 line = f'{path}/{file[:-4]}.jpg,{line}'
-#                 f.write(line + '\n')
+with open('/content/lepidoptera/data_analyse/annotations.csv', 'w') as f:
+    path = paths_to_annotations[0]
+    for file in os.listdir(path):
+        with open(f'{path}/{file}') as f2:
+            lines = f2.readlines()
+            for line in lines:
+                line = line.replace('\n', '')
+                line = line.split(' ')
+                line[0] = int(line[0])
+                line = [line[1], line[2], line[3], line[4], labels[line[0]]]
+                line = ','.join(line)
+                line = f'{path}/{file[:-4]}.jpg,{line}'
+                f.write(line + '\n')
 
-# #For the second folder of annotations and the corresponding labels
+#For the second folder of annotations and the corresponding labels
 
-# with open(f'/home/lucien/projet_lepinoc/data/data/{folders[1]}/classes.txt') as f:
-#     lines = f.readlines()
-#     labels = [line.replace('\n', '') for line in lines]
+with open(f'/home/lucien/projet_lepinoc/data/data/{folders[1]}/classes.txt') as f:
+    lines = f.readlines()
+    labels = [line.replace('\n', '') for line in lines]
 
-# with open('/content/lepidoptera/data_analyse/annotations2.csv', 'w') as f:
-#     path = paths_to_annotations[1]
-#     for file in os.listdir(path):
-#         with open(f'{path}/{file}') as f2:
-#             lines = f2.readlines()
-#             for line in lines:
-#                 line = line.replace('\n', '')
-#                 line = line.split(' ')
-#                 line[0] = int(line[0])
-#                 line = [line[1], line[2], line[3], line[4], labels[line[0]]]
-#                 line = ','.join(line)
-#                 line = f'{path}/{file[:-4]}.jpg,{line}'
-#                 f.write(line + '\n')
+with open('/content/lepidoptera/data_analyse/annotations.csv', 'a') as f:
+    path = paths_to_annotations[1]
+    for file in os.listdir(path):
+        with open(f'{path}/{file}') as f2:
+            lines = f2.readlines()
+            for line in lines:
+                line = line.replace('\n', '')
+                line = line.split(' ')
+                line[0] = int(line[0])
+                line = [line[1], line[2], line[3], line[4], labels[line[0]]]
+                line = ','.join(line)
+                line = f'{path}/{file[:-4]}.jpg,{line}'
+                f.write(line + '\n')
 
-# #For the third folder of annotations and the corresponding labels
+#For the third folder of annotations and the corresponding labels
 
-# with open(f'/home/lucien/projet_lepinoc/data/data/{folders[2]}/classes.txt') as f:
-#     lines = f.readlines()
-#     labels = [line.replace('\n', '') for line in lines]
+with open(f'/home/lucien/projet_lepinoc/data/data/{folders[2]}/classes.txt') as f:
+    lines = f.readlines()
+    labels = [line.replace('\n', '') for line in lines]
 
-# with open('/content/lepidoptera/data_analyse/annotations3.csv', 'w') as f:
-#     path = paths_to_annotations[2]
-#     for file in os.listdir(path):
-#         with open(f'{path}/{file}') as f2:
-#             lines = f2.readlines()
-#             for line in lines:
-#                 line = line.replace('\n', '')
-#                 line = line.split(' ')
-#                 line[0] = int(line[0])
-#                 line = [line[1], line[2], line[3], line[4], labels[line[0]]]
-#                 line = ','.join(line)
-#                 line = f'{path}/{file[:-4]}.jpg,{line}'
-#                 f.write(line + '\n')
+with open('/content/lepidoptera/data_analyse/annotations.csv', 'a') as f:
+    path = paths_to_annotations[2]
+    for file in os.listdir(path):
+        with open(f'{path}/{file}') as f2:
+            lines = f2.readlines()
+            for line in lines:
+                line = line.replace('\n', '')
+                line = line.split(' ')
+                line[0] = int(line[0])
+                line = [line[1], line[2], line[3], line[4], labels[line[0]]]
+                line = ','.join(line)
+                line = f'{path}/{file[:-4]}.jpg,{line}'
+                f.write(line + '\n')
 
-# #For the fourth folder of annotations and the corresponding labels
+#For the fourth folder of annotations and the corresponding labels
 
-# with open(f'/home/lucien/projet_lepinoc/data/data/{folders[3]}/classes.txt') as f:
-#     lines = f.readlines()
-#     labels = [line.replace('\n', '') for line in lines]
+with open(f'/home/lucien/projet_lepinoc/data/data/{folders[3]}/classes.txt') as f:
+    lines = f.readlines()
+    labels = [line.replace('\n', '') for line in lines]
 
-# with open('/content/lepidoptera/data_analyse/annotations4.csv', 'w') as f:
-#     path = paths_to_annotations[3]
-#     for file in os.listdir(path):
-#         with open(f'{path}/{file}') as f2:
-#             lines = f2.readlines()
-#             for line in lines:
-#                 line = line.replace('\n', '')
-#                 line = line.split(' ')
-#                 line[0] = int(line[0])
-#                 line = [line[1], line[2], line[3], line[4], labels[line[0]]]
-#                 line = ','.join(line)
-#                 line = f'{path}/{file[:-4]}.jpg,{line}'
-#                 f.write(line + '\n')
+with open('/content/lepidoptera/data_analyse/annotations.csv', 'a') as f:
+    path = paths_to_annotations[3]
+    for file in os.listdir(path):
+        with open(f'{path}/{file}') as f2:
+            lines = f2.readlines()
+            for line in lines:
+                line = line.replace('\n', '')
+                line = line.split(' ')
+                line[0] = int(line[0])
+                line = [line[1], line[2], line[3], line[4], labels[line[0]]]
+                line = ','.join(line)
+                line = f'{path}/{file[:-4]}.jpg,{line}'
+                f.write(line + '\n')
 
 #we want to write a final csv that merges all the annotations, and add the dimensions of the images at th eend of each line
 
 #Vérifions si des images portent le même nom dans les différents dossiers
 
-import os
+# import os
 
-path1, path2, path3, path4 = [f'/content/lepidoptera/data_analyse/annotations{i}.csv' for i in range(1, 5)]
-print(path1, path2, path3, path4)
+# path1, path2, path3, path4 = [f'/content/lepidoptera/data_analyse/annotations{i}.csv' for i in range(1, 5)]
+# print(path1, path2, path3, path4)
 
-with open(path1) as f:
+
+path = '/content/lepidoptera/data_analyse/annotations.csv'
+with open(path) as f:
     lines1 = f.readlines()
     lines1 = [line.split(',')[0] for line in lines1]
+    #on veut regarder combien de photos différentes il y a 
+    lines1 = set(lines1)
+    print("Nombre d'annotations dans le csv", len(lines1))
 
-with open(path2) as f:
-    lines2 = f.readlines()
-    lines2 = [line.split(',')[0] for line in lines2]
+#on veut compter le nombre de photos annotées
+s = 0
+for folder in paths_to_annotations:
+    count = 0
+    for file in os.listdir(folder):
+        count += 1
+    s += count
+print("Nombre totale d'image annotée dans les data",s) #le nombre d'images annotées est 512, différent de 900 car toutes le simages de sont pas annotées
 
-with open(path3) as f:
-    lines3 = f.readlines()
-    lines3 = [line.split(',')[0] for line in lines3]
-
-with open(path4) as f:
-    lines4 = f.readlines()
-    lines4 = [line.split(',')[0] for line in lines4]
-
-lines = lines1 + lines2 + lines3 + lines4
-lines = set(lines)
-# if len(lines) == len(lines1) + len(lines2) + len(lines3) + len(lines4):
-#     print('ok')
-# else:
-#     print(len(lines))
-#     print(lines)
-#     print(len(lines1) + len(lines2) + len(lines3) + len(lines4))
-#     print('not ok')
-
-#on veut afficher les images qui sont en double dans lines1, lines2, lines3 et lines4
-double = []
-for line in lines1:
-    if line in lines2:
-        double.append(line)
-    if line in lines3:
-        double.append(line)
-    if line in lines4:
-        double.append(line)
-
-for line in lines2:
-    if line in lines3:
-        double.append(line)
-    if line in lines4:
-        double.append(line)
-
-for line in lines3:
-    if line in lines4:
-        double.append(line)
-print(double)
-print(len(double))
-print("nombre total de lignes attendu dans le csv final", len(lines1) + len(lines2) + len(lines3) + len(lines4))
 
 
 import cv2
@@ -157,8 +127,7 @@ def convert_bbox_format_reverse(bbox):
             return xmin, ymin, xmax, ymax
 
 with open('/content/lepidoptera/script/lepidoptere_detection/src/data/inputs/all_annotations.csv', 'w') as f:
-    for i in range(1, 5):
-        with open(f'/content/lepidoptera/data_analyse/annotations{i}.csv', 'r') as f2:
+        with open('/content/lepidoptera/data_analyse/annotations.csv', 'r') as f2:
             lines = f2.readlines()
             for line in lines:
                 line = line.replace('\n', '')
@@ -201,4 +170,3 @@ with open('/content/lepidoptera/script/lepidoptere_detection/src/data/inputs/all
                 line = f'{line},{specie},{width},{height}'
                 f.write(line + '\n')
                 
-                #we want this order: xmin', 'ymin', 'xmax', 'ymax'
